@@ -17,6 +17,10 @@
   },
   "homepage": "https://github.com/wesleyhuang23/react-webpack-2#readme",
   "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "express-session": "^1.15.2",
+    "massive": "^2.6.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-redux": "^5.0.3",
