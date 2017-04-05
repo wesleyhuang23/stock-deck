@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/wesleyhuang23/react-webpack-2#readme",
   "dependencies": {
+    "axios": "^0.16.0",
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
     "express-session": "^1.15.2",
@@ -24,7 +25,9 @@
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-redux": "^5.0.3",
+    "react-router": "^4.0.0",
     "redux": "^3.6.0",
+    "redux-logger": "^3.0.1",
     "redux-promise": "^0.5.3",
     "redux-thunk": "^2.2.0"
   },

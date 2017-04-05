@@ -1,6 +1,15 @@
 import React from 'react';
+import {connect} from 'react-redux';
+import {bindActionCreators} from 'redux';
 
-export default class App extends React.Component{
+//reducers
+import {homePageStocks} from './../actions/index.js';
+
+class App extends React.Component{
+    componentWillMount(){
+        console.log('App component')
+        this.props.homePageStocks()
+    }
     render(){
         return (
             <div className="container">
@@ -11,3 +20,9 @@ export default class App extends React.Component{
         )
     }
 }
+
+function mapDispatchToProps(dispatch){
+  return bindActionCreators({homePageStocks}, dispatch); 
+}
+
+export default connect(null, mapDispatchToProps)(App)

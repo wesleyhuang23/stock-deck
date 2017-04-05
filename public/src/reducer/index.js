@@ -1,5 +1,8 @@
-import {combineReducers} from 'redux'; //combines all reduces and passes into store
+import { combineReducers } from 'redux';
+import homePageStockReducer from './HomePageStockReducer';
 
-export default combineReducers({
-
+const rootReducer = combineReducers({
+    homeStocks: homePageStockReducer
 });
+
+export default rootReducer;
